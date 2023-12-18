@@ -1,0 +1,21 @@
+<h1 class="p-4">Products</h1>
+<div class="card ps-3">
+  <div class="card-body">
+    <table class="table">
+      <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
